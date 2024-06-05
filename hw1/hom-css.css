@@ -1,0 +1,153 @@
+body {
+    background-color: #0E0E0E;
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: #1A1A1A;
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    
+}
+h2 {
+    color: #00FF00; /* Razer green */
+}
+p {
+    font-size: 16px;
+}
+
+.logout-button {
+    background-color: #00FF00; /* Razer green */
+    color: #0E0E0E;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.logout-button:hover {
+    background-color: #009900;
+}
+
+#cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto; /* Permette lo scorrimento orizzontale */
+    flex-wrap: nowrap; /* Evita che gli elementi vadano su una nuova riga */
+}
+
+#wish-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto; /* Permette lo scorrimento orizzontale */
+    flex-wrap: nowrap; /* Evita che gli elementi vadano su una nuova riga */
+  
+}
+
+
+.cart-item {
+    width: 250px;
+    height: 500px;
+    border: 2px solid #00FF00;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+    flex-shrink: 0; /* Impedisce agli elementi di ridursi in larghezza */
+}
+
+.cart-item span{
+
+    background: #009900;
+    color: white;
+    align-items: center;
+    border:2px solid black;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.cart-item img{
+
+    width: 100%;  /* Assicurarsi che l'immagine occupi tutta la larghezza del contenitore */
+    height: auto;
+}
+
+ .total-price{
+    background: #009900;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.quantity-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top:5px;
+    
+}
+.quantity-controls button {
+    background: #009900;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px 10px;
+    
+}
+
+
+.section {
+
+    border: 2px solid #009900; 
+    border-radius: 6px;
+
+
+}
+
+#user-info img{
+
+    border: 2px solid #009900; 
+    border-radius: 6px;
+    width: 200px;
+    height: 200px;
+
+}
+
+
+.tonaIndex{
+
+    background: #009900;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom:20px;
+ 
+
+}
+
+.tonaIndex a{
+
+   
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+

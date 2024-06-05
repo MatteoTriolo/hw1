@@ -1,0 +1,958 @@
+body{
+    margin:0px;
+    background-color: #534f4f;
+    
+    /*css per l'header*/
+
+    }
+    
+    header{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+    height: 8vh;
+    background-color:#000;
+    border-bottom:3px solid #38871f;
+    width: 100%;
+    margin-top: -80px;
+    position: fixed;
+    z-index: 2;
+    
+    
+    }
+    
+    header a{
+    
+    
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: 1rem;
+        color: #888;
+        text-decoration: none;
+    
+    }
+    
+    header a:hover{
+    
+        color:white;
+    
+    }
+    header a:active{
+        border-bottom: 1px solid blue;
+        border-left: 1px solid blue;
+    }
+
+    
+    header img{
+    
+        height: 50px;
+        width: 50px;
+        background: black;
+    }
+
+    header a:hover img{
+
+          opacity: .5;
+    }
+    
+ 
+    #banner{
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+        
+        height: 40px;
+        margin-top: 80px;
+        padding-top: 4px;
+        width: 100%;
+       
+    }
+
+    /*fine*/
+
+    /*contenitore*/
+    
+    .content{
+        border: 1px solid #38871f;
+        width:100%;
+        height:90vh;
+        background-color: #888;
+        margin-top:10px;
+        display: flex;
+    
+        flex-direction: column;
+        align-items: center;
+    
+    
+    }
+    
+    .content img{
+    
+        width: 100%;
+        height: 90vh;
+    }
+    
+    .testo{
+    
+        display: flex;
+    
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: 1rem;
+        color: white;
+        z-index: 1;
+        margin-top: 5%;
+       
+        margin-top: -40%;
+    
+    }
+    
+    .testop{
+    
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: 1rem;
+        color: white;
+       
+       margin-top: -70%;
+         z-index: 1;
+    }
+    
+    a.test{
+    
+        text-decoration: none;
+        color: white;
+        z-index: 1;
+    
+    }
+    
+    a.test:hover{
+    
+        text-decoration:underline;
+    }
+    .im1{
+        width:inherit;
+        z-index: 0;
+        height: inherit;
+    }
+    
+    a.im1:hover{
+    
+       opacity: .9;
+    }
+    
+    .box
+    {
+    
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        margin-top: 20px;
+    }
+    
+    .uno
+    {
+        width: 49.5%;
+        height: 100%;
+        border: 1px solid #38871f;
+        display: flex;
+    
+        flex-direction: column;
+         align-items: center;
+         margin-left:2px;
+    
+    }
+    
+    
+    
+    .due
+    {
+        width: 49.5%;
+        height: 100%;
+        border: 1px solid #38871f;
+        display: flex;
+    
+        flex-direction: column;
+         align-items: center;
+         margin-right: 2px;
+    }
+    
+    
+    .uno img{
+        width: 100%;
+        height: 80vh;
+    
+    }
+    
+    .due img{
+    
+        width: 100%;
+        height: 80vh;
+    }
+    
+    a.uno:hover{
+    
+       opacity: .9;
+    }
+    
+    a.due:hover{
+    opacity: .9;
+    
+    }
+
+    .boxImg{
+        cursor: pointer;
+    }
+    
+    /*footer*/
+    
+    footer{
+    margin-top:10px;
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    
+    }
+    
+    
+    #menu
+    {
+      display: none;
+    
+    }
+    
+    .hidden{
+       display: none;
+    }
+    
+    #cerca
+    {
+
+    display: flex;
+    background-color: #222;
+   
+    align-items:center;
+    
+    flex-direction: row;
+    height: 5vh;
+    border:3px solid #38871f;
+    width: 50%;
+    margin-top: -70px;
+    margin-left: 25%;
+    position: fixed;
+    z-index: 2;
+    
+   
+    
+ 
+    }
+   
+
+    #categoryInput{
+
+        width: 100%;
+        padding: 5px;
+
+    }
+   
+    #cerca img {
+
+        background:transparent;
+        width: 5%;
+        height: 50%;
+        margin-left:5px;
+        
+    }
+
+    #tex{
+
+        width: 20vw;
+        height: 4vh;
+        opacity: 0.7;
+        
+    }
+
+
+
+
+    #shop{
+
+        width: 400px;
+        height: 400px;
+        border: 2px solid green;
+        z-index: 4;
+        position: fixed;
+        margin-left: 70%;
+        margin-top:-40px;
+        
+    }
+
+   
+
+   /*css per modale*/
+
+    section{
+
+        position:absolute;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 100%;
+        background-color:black;
+        z-index:2;
+
+        display: flex;
+        
+        
+        
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow-x: scroll;       
+    }
+
+    
+
+    .inlinea{
+         
+        border:2px solid #38871f;
+        
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        justify-content: space-around;
+        flex: 0 0 auto; /* Impedisce alle immagini di ridimensionarsi */
+        width: 400px; 
+        height: 600px; 
+        margin-right: 20px;
+        
+        
+    }
+   
+    .inlinea img{
+
+        width: 100%;
+        height: 350px;
+       
+    }
+
+
+
+   /*css per il carrello*/
+    .carrello{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items:flex-start;
+        justify-content: space-around;
+        background-color:#222;
+        height: 100%;
+        overflow-y: scroll;
+
+    }
+
+    
+    
+ 
+     
+   
+
+    /*fine*/
+
+    /*testo personalizzato articoli*/
+    .testoPersonalizzato
+    {
+        z-index: 4;
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: 1rem;
+        color:black;
+        display: flex;
+        border: 2px solid #38871f;
+        background-color: #38871f;
+        border-radius: 6px;
+        padding: 3px;
+        cursor:pointer;
+    }
+
+    .no-scroll{
+        overflow:hidden;
+    }
+
+    .descrizione{
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: .9rem;
+        color:white;
+        border: 2px solid #38871f;
+       
+        border-radius: 3px;
+        padding:2px;
+        width: 95%;
+       
+    }
+
+    .specificheTesto{
+        z-index: 3;
+    
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: 1.3rem;
+        color: white;
+        border: 2px solid white;
+        height: 40px;
+       
+       
+        
+    }
+
+     .cambio{
+        background-color: black;
+     }
+    
+     .chiudi{
+
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: 1.3rem;
+        color: white;
+        margin-top:-45%;
+        margin-left:-95%;
+        z-index: 4;
+        cursor:pointer;
+        position:fixed;
+     }
+
+     /*fine*/
+
+
+     /*css per l'articolo inserito nel carrello a tendina*/
+
+     #aggiunto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        border: 2px solid white;
+        margin-left:15%;
+        margin-top: 10px;
+        
+     }
+     .articoloCarrello{
+
+        width: 250px;
+        height: 300px;
+        border: 2px solid green;
+       
+        
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: flex-end;
+       
+       flex-wrap: nowrap;
+       background-color: #000;
+       margin: 10px;
+       
+    
+     }
+
+     .articoloCarrello img{
+
+        width: 99%;
+        height: 50%;
+     }
+
+     
+     .articoloCarrello span{
+
+      
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        color: white;
+      
+        height: 20px;
+        width: 99%;
+        font-size: small;
+        z-index:4;
+       margin-top:2px;
+       background-color:#2c7a5c;
+        
+     }
+
+     .articoloCarrello h1{
+
+        font-size: 1rem;
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        color: white;
+        z-index: 5;
+        margin-top:-40px;
+        margin-left:-80%;
+        cursor:pointer;
+        border:none;
+        
+
+
+        
+
+     }
+      /*fine carrello*/
+    
+
+
+    
+
+    /*seconda pagina*/
+    #apri-carrello
+    {
+        border: #38a169 2px solid;
+        background: #2c7a5c;
+        color:white;
+        font-size: 1rem;
+        cursor: pointer;
+        width: 90%;
+        margin: 10px;
+       text-align: center;
+        
+       
+       
+        
+
+    }
+    #apri-carrello a{
+
+        color: white;
+        text-decoration: none;
+
+    }
+
+    #apri-carrello a:hover{
+
+        color: white;
+        text-decoration: none;
+        opacity: .8;
+    }
+
+   
+   /*css per spotify*/
+   #search_content{
+
+     margin-top: -10px;
+     margin-left: -165%;
+     width: 70%;
+     opacity: 0.9;
+   }
+
+   #album-view{
+
+
+    border: 2px solid ;
+    width: 58vw;
+    height: 30vh;
+    margin-left: 400px;
+     margin-top: -50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid #000;
+    
+    
+
+   }
+    
+
+   .album{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;    
+    border: 2px solid black;
+   }
+
+   .album img{
+       
+    width: 100%;
+    height: 80%;
+    
+
+   }
+
+   .album span{
+       
+   font-size: 0.9rem;
+   width: 50%;
+   background-color: #38871f;
+   color: white;
+   }
+
+
+
+
+  #playlist-details{
+
+
+    border: 2px solid green;
+    height: 600px;
+    width: 500px;
+    margin-top: -450px;
+    background-color: black;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    
+  }  
+
+
+
+  #playlist-details h2 {
+    margin-bottom: 10px;
+    background-color:black;
+    font-size: larger;
+    color: aliceblue;
+    
+
+    
+}
+
+#playlist-details ul {
+    list-style-type: none;
+    padding: 0;
+    z-index:7;
+    border: 2px solid white;
+    background-color: black;
+}
+
+#playlist-details li {
+    background-color: #38871f;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+    width: 50%;
+    margin:auto;
+    margin-bottom: 15px;
+   
+    
+    
+}
+
+#playlist-details li:hover {
+    opacity: 0.7;
+}
+
+
+
+.save-button {
+    padding: 5px 10px;
+    font-size:smaller;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+
+}
+
+
+
+  .chiudiPlaylist{
+
+   
+   
+   cursor: pointer;
+   
+   color:white;
+   background-color: green;
+   z-index: 8;
+   font-size: small;
+   margin-bottom: -15px;
+  
+
+}
+
+.nascondi_playlist{
+
+
+    background-color: #000;
+   
+    height: 600px;
+    width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+   .riduci{
+
+    height: 30vh;
+   }
+
+
+
+   .prezzo{
+
+    font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+    font-size: .9rem;
+    color:white;
+    border: 2px solid #38871f;
+    background-color: #38871f;
+    border-radius: 3px;
+    padding:2px;
+    width: 95%
+
+   }
+
+   .testoCarrello{
+    
+    font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+    font-size: .7rem;
+    color:white;
+    border: 2px solid #38871f;
+    width: 30%;
+    
+   }
+
+
+  /*css per la pagina login*/
+
+
+
+
+
+
+   /*inizio css per mobile*/
+
+    @media (max-width: 500px) {
+     body {
+     font-size: 6px;
+     }
+    
+    
+    
+    }
+    
+    
+    @media (max-width: 500px) {
+    
+    #menu
+    {
+        display: flex;
+        background: black;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        flex-direction: row;
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: .5rem;
+        color: white;
+        position: fixed;
+        top:0;
+       
+    
+    }
+    
+    #menu img{
+        height: 50px;
+        width: 50px;
+        background: black;
+    
+    
+    }
+    
+    }
+    
+    
+    @media (max-width: 500px) {
+
+       
+     #links {
+     display: none;
+     }
+    
+     #header
+     {
+     display: none;
+     }
+    
+    #banner
+    {
+    
+        display: none;
+    }
+
+        
+        .content{
+            background-color: #000;
+            display: flex;
+           
+            flex-direction: column;
+            flex-wrap: nowrap;
+            
+        }
+
+        .content img{
+             margin-top:50%;
+             width:100%;
+             height: 40vh;
+        }
+         
+        .testo{
+
+            margin-top: -120%;
+            z-index: 3;
+            width: 80%;
+        }
+      
+        .box{
+            background-color:black ;
+            display: flex;
+           
+            flex-direction: column;
+            justify-content: space-around;
+
+        }
+
+        .uno img{
+           
+            
+             width:100%;
+             height: 100%;
+           
+        }
+        .uno{
+            width:100%;
+            height: 70vh;
+            margin-top: 10px;
+        }
+
+        .due{
+            width:100%;
+            height: 70vh;
+            margin-top: 10px;
+
+        }
+        .due img{
+
+            
+            width:100%;
+            height:100%;
+            
+        }
+    
+
+        #modal-view-menu{
+
+            width:100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+          
+            align-items:flex-start ;
+            background-color: black;
+            
+            
+
+        }
+
+        #modal-view-menu img{
+            width: 50px;
+            height: 50px;
+            
+
+        }
+
+
+        #modal-view-menu div{
+
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            border-bottom: 2px solid #888;
+            margin-top:3px;
+        }
+         
+
+       
+       
+        #modal-view-menu a{
+    
+    
+        font-family:  Helvetica Neue, Arial, Noto Sans, sans-serif;
+        font-size: 1rem;
+        color: #888;
+        text-decoration: none;
+    
+    }
+    
+    #modal-view-menu a:hover{
+    
+        color:white;
+    
+    }
+
+    .nascondi-tendina{
+        display:none;
+    
+    }
+   
+    .no-scroll{
+        overflow: hidden;
+    }
+
+    section{
+
+        position:fixed;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 100vw;
+        background-color:rgb(0, 0,0,1);
+        z-index:4;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    a.testop{
+    
+        text-decoration: none;
+        color: white;
+        z-index: 3;
+        width: 10%;
+    
+    }
+    
+}
+
+/*fine css per mobile*/
